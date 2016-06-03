@@ -35,19 +35,22 @@ h1 span {
 img {
   display: block;
   height: auto;
-  margin: 0 auto;
   max-width: 600px;
   width: 100%;
 }
 
 .cell {
   margin: 0 auto;
-  max-width: 600px;
-  padding: 75px 20px;
+  max-width: 800px;
+  padding: 20px;
   text-align: center;
 }
 
 .row {
+  align-items: center;
   background: #284747;
-  padding: 20px;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  width: 100%;
 }

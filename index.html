@@ -7,21 +7,26 @@
     <meta name="author" content="Josh Carnley">
     
     <link rel="stylesheet" href="assets/stylesheets/application.css">
+    <link rel="stylesheet" href="assets/stylesheets/peppermint.css">
   </head>
   <body>
     <header class="cell">
       <h1>Records<span>&bull;</span>on<span>&bull;</span>Record</h1>
-      <p>Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
     </header>
-    <section class="row">
-      <img src="assets/images/living-dying.png" alt="Living and Dying in 3/4 Time by Jimmy Buffett" data-adaptive-background>
-    </section>
+    <div class="peppermint">
+      <div class="row">
+        <img src="assets/images/let-it-be.png" alt="The Beatles: Let It Be" data-adaptive-background>
+      </div>
+      <div class="row">
+        <img src="assets/images/modest-mouse.png" alt="Modest Mouse" data-adaptive-background>
+      </div>
+      <div class="row">
+        <img src="assets/images/living-dying.png" alt="Living and Dying in 3/4 Time by Jimmy Buffett" data-adaptive-background>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="assets/javascripts/adaptivebackgrounds.js"></script>
+    <script src="assets/javascripts/peppermint.min.js"></script>
     <script src="assets/javascripts/application.js"></script>
-    <script>
-      $(document).ready(function(){
-        $.adaptiveBackground.run();
-      });
-    </script>
   </body>
 </html>

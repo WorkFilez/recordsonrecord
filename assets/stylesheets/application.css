@@ -6,7 +6,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
@@ -18,39 +18,78 @@ body {
   font-size: 100%;
 }
 
+blockquote {
+  font-size: 23px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+  text-indent: -8px;
+  z-index: 10;
+}
+
 h1 {
-  color: #1bc7b5;
+  color: #333333;
   margin-bottom: 10px;
-  font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 42px;
   font-weight: bold;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.05em;
+  margin: 0;
   text-transform: uppercase;
 }
 
-h1 span {
-  color: #dddddd;
+header {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  justify-content: center;
 }
 
 img {
   display: block;
   height: auto;
-  max-width: 600px;
+  max-width: 675px;
   width: 100%;
 }
 
 .cell {
+  color: white;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 550px;
   padding: 20px;
-  text-align: center;
+}
+
+.details {
+  align-items: center;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.details-number {
+  font-size: 21px;
 }
 
 .row {
   align-items: center;
   background: #284747;
   display: flex;
-  height: 80vh;
+  flex-flow: column nowrap;
+  height: calc(100vh - 100px);
   justify-content: center;
+  position: relative;
   width: 100%;
+}
+
+.row::after {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15));
+  bottom: 0;
+  content: "";
+  height: 225px;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
